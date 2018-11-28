@@ -1,0 +1,108 @@
+.tdbTimeline {
+
+}
+
+.tdbEvent {
+    position: absolute;
+    margin-top: -19px;
+
+}
+
+.eventdown .bubble:before , .eventdown .bubble:after, .eventup .bubble:before , .eventup .bubble:after {
+     content: "";
+     position: absolute;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-color: transparent;
+     border-bottom: 0;
+ }
+
+.eventup .bubble:before {
+    bottom: -10px;
+    left: 13px;
+    border-top-color: rgba(222, 222, 222, 0.66);
+    border-width: 12px;
+}
+
+.eventup .bubble:after {
+    border-bottom: 0;
+    bottom: -8px;
+    left: 13px;
+    border-top-color: #F6F6F6;
+    border-width: 12px;
+
+}
+
+
+
+.eventdown .bubble:before , .eventdown .bubble:after {
+
+}
+
+.eventdown .bubble:before {
+    bottom: 59px;
+    left: 103px;
+    border-top-color: rgba(222, 222, 222, 0.66);
+    border-width: 12px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.eventdown .bubble:after {
+    bottom: 57px;
+    left: 103px;
+    border-top-color: #F6F6F6;
+    border-width: 12px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+.bubble {
+    position: absolute;
+    background-color: rgba(158, 158, 158, 0.1);
+    width: 139px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(158, 158, 158, 0.64)
+}
+
+
+.eventup .bubble {
+    top: -70px;
+    left: -15px;
+}
+
+.eventdown .bubble {
+    left: -105px;
+    top: 33px;
+}
+
+
+.eventup .time {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    font-size: 8px;
+    margin-top: -3px;
+    margin-left: -5px;
+    color: #9E9E9E;
+}
+
+.eventdown .time{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    font-size: 8px;
+    margin-top: -31px;
+    margin-left: -5px;
+    color: #9E9E9E;
+}
